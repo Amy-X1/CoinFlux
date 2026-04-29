@@ -7,10 +7,11 @@
 }
 
 /* Scroll Bar */
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 10px;
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
   background: var(--primary-color);
   border-radius: 6px;
 }
@@ -919,6 +920,7 @@ section {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  border: 3px solid var(--primary-color);
 }
 
 .small .name {
@@ -1111,6 +1113,7 @@ section {
     justify-content: center;
   }
 }
+
 @media(max-width: 600px) {
   #pricing .gri {
     justify-content: center;
@@ -1130,19 +1133,19 @@ section {
   gap: 15px;
 }
 
-.quest{
+.quest {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: auto;
-  gap: 10px;
+  margin: 20px 300px;
+  gap: 30px;
 }
 
-#quest1{
+#quest1 {
   background-color: var(--sec-bg);
   backdrop-filter: blur(5px);
-  padding: 12px;
-  width: 100%;
+  padding: 18px;
+  /* width: 100%; */
   border-radius: 12px;
   border: 1px solid var(--light-color);
   display: flex;
@@ -1150,19 +1153,59 @@ section {
   gap: 20px;
 }
 
-#quest1 p{
-  color: var(--light-color);
+#quest1 p {
+  color: var(--secondary-color);
   cursor: pointer;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  /* gap: 430px; */
+  /* width: 400%; */
 }
 
-#quest1 p:hover{
+#quest1 p:hover {
   color: var(--hover-color);
 }
 
-#quest1 span{
+#quest1 span {
   color: var(--light-color);
   font-size: 13px;
   line-height: 18px;
   display: none;
 }
+
+/* mdiaquery for faq */
+@media(max-width: 600px) {
+  #FAQ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .quest {
+    margin: 0px;
+  }
+  .quest #quest1 {
+    padding: 12px;
+  }
+}
+/* end of media query for faq */ 
+
 /* end of FAQ section  */
+/* cardis section   */
+#cardis{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--prima-dark-shade);
+}
+
+.cardo{
+  display: flex;
+  background-color: var(--card-bg);
+  border: 1px;
+  width: 60%;
+  justify-content: center;
+}
+/* end of cardis section  */
